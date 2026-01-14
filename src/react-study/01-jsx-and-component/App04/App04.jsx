@@ -31,5 +31,5 @@ export default function App04() {
         }
         <MenuList title={menuTitle} menus={menus} />
     </div>
-  )
+  );
 }
