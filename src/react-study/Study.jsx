@@ -1,40 +1,15 @@
-import UseState01 from "./02-useState/UseState01"
-import UseState02 from "./02-useState/UseState02"
-import UseState03 from "./02-useState/UseState03"
-import UseState04 from "./02-useState/UseState04"
-import UseState05 from "./02-useState/UseState05"
-import UseState06 from "./02-useState/UseState06"
-import UseState07 from "./02-useState/UseState07"
-import UseState08 from "./02-useState/UseState08"
-import UseState09 from "./02-useState/UseState09"
-import NavBar from "./02-useState/NavBar/NavBar"
-import ModalContainer from "./02-useState/Modal/ModalContainer"
-import UseEffect01 from "./03_useEffect/UseEffect01"
-import Unmount from "./03_useEffect/Unmount/Unmount"
-import UseEffect02 from "./03_useEffect/UseEffect02"
-import UseEffect03 from "./03_useEffect/UseEffect03"
-import UseEffect04 from "./03_useEffect/UseEffect04"
-
+import UseRef01 from "./04-useRef/useRef01"
+import UseRef02 from "./04-useRef/UseRef02";
+import Emotion01 from "./Emotion/Emotion01";
+import Emotion02 from "./Emotion/Emotion02";
 
 export default function study() {
     const stateStudy = {
-        1: <UseState01 />,
-        2: <UseState02 />,
-        3: <UseState03 />,
-        4: <UseState04 />,
-        5: <UseState05 />,
-        6: <UseState06 />,
-        7: <UseState07 />,
-        8: <UseState08 />,
-        9: <UseState09 />,
-        10: <NavBar />,
-        11: <ModalContainer />,
-        12: <UseEffect01 />,
-        13: <Unmount />,
-        14: <UseEffect02 />,
-        15: <UseEffect03 />,
-        16: <UseEffect04 />
+        1: <UseRef01 />,
+        2: <UseRef02 />,
+        3: <Emotion01 />,
+        4: <Emotion02 />,
     }
 
-  return stateStudy[16];
+  return stateStudy[4];
 }
