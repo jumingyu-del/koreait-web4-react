@@ -9,6 +9,11 @@ import UseState08 from "./02-useState/UseState08"
 import UseState09 from "./02-useState/UseState09"
 import NavBar from "./02-useState/NavBar/NavBar"
 import ModalContainer from "./02-useState/Modal/ModalContainer"
+import UseEffect01 from "./03_useEffect/UseEffect01"
+import Unmount from "./03_useEffect/Unmount/Unmount"
+import UseEffect02 from "./03_useEffect/UseEffect02"
+import UseEffect03 from "./03_useEffect/UseEffect03"
+import UseEffect04 from "./03_useEffect/UseEffect04"
 
 
 export default function study() {
@@ -24,7 +29,12 @@ export default function study() {
         9: <UseState09 />,
         10: <NavBar />,
         11: <ModalContainer />,
+        12: <UseEffect01 />,
+        13: <Unmount />,
+        14: <UseEffect02 />,
+        15: <UseEffect03 />,
+        16: <UseEffect04 />
     }
 
-  return stateStudy[11];
+  return stateStudy[16];
 }
