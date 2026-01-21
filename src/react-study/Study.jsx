@@ -2,6 +2,10 @@ import UseRef01 from "./04-useRef/useRef01"
 import UseRef02 from "./04-useRef/UseRef02";
 import Emotion01 from "./Emotion/Emotion01";
 import Emotion02 from "./Emotion/Emotion02";
+import Router01 from "./ReactRouter/Router01/Router01";
+import Router02 from "./ReactRouter/Router02/Router02";
+import Router03 from "./ReactRouter/Router03/Router03";
+import Router04 from "./ReactRouter/Router04/Router04";
 
 export default function study() {
     const stateStudy = {
@@ -9,7 +13,11 @@ export default function study() {
         2: <UseRef02 />,
         3: <Emotion01 />,
         4: <Emotion02 />,
+        5: <Router01 />,
+        6: <Router02 />,
+        7: <Router03 />,
+        8: <Router04 />,
     }
 
-  return stateStudy[4];
+  return stateStudy[8];
 }
