@@ -6,6 +6,7 @@ import Router01 from "./ReactRouter/Router01/Router01";
 import Router02 from "./ReactRouter/Router02/Router02";
 import Router03 from "./ReactRouter/Router03/Router03";
 import Router04 from "./ReactRouter/Router04/Router04";
+import Router05 from "./ReactRouter/Router05/Router05";
 
 export default function study() {
     const stateStudy = {
@@ -17,7 +18,8 @@ export default function study() {
         6: <Router02 />,
         7: <Router03 />,
         8: <Router04 />,
+        9: <Router05 />,
     }
 
-  return stateStudy[8];
+  return stateStudy[9];
 }
