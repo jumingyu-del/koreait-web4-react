@@ -2,10 +2,12 @@
 // import하는 쪽에서 사용하기 편한 이름으로 지정 가능
 
 import Study from "./react-study/study";
+import MyToast from "./react-study/Zustand/MyToast";
 
 function App() {
   return (
     <>
+      <MyToast />
       <Study />
     </>
   );
