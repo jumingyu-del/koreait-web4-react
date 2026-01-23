@@ -20,4 +20,46 @@ export const useCurrentBook = create((set) => {
         })
         // set을 써서 전역상태인 book의 필드 일부만 업데이트
     }
+});
+
+export const useBookList = create((set) => {
+    return {
+        // R
+        books: [{
+            id: 1,
+            title: "자바의 정석",
+            author: "남궁성",
+            price: "30000"
+        }],
+    
+
+    // C - add
+    addBook: (book) => set((prev) => {
+        return {
+            ...prev,
+            // spread로 없던 id key 추가
+            books: [...prev.books, {...book, id: Date.now()}]
+        }
+    }),
+
+    // U -update
+    updateBook: (id, updatePrice) => set((prev) => {
+        return {
+            ...prev,
+            // map(), filter() -> 새로운 []를 리턴
+            books: prev.books.map((book) => {
+                return book.id === id ? {...book, "price": updatePrice}: book
+            })
+        }
+    }),
+
+    // D - remove
+    // 내가 전달해준 id 빼고 나머지만 남겨줘 - filter
+    removeBook: (id) => set((prev) => {
+        return {
+            ...prev,
+            books: prev.books.filter((book) => book.id !== id)
+        }
+    })
+    }
 })
