@@ -1,3 +1,4 @@
+import { Axios } from "axios";
 import UseRef01 from "./04-useRef/useRef01"
 import UseRef02 from "./04-useRef/UseRef02";
 import Emotion01 from "./Emotion/Emotion01";
@@ -11,6 +12,8 @@ import Zustand01 from "./Zustand/Zustand01";
 import Zustand02 from "./Zustand/Zustand02";
 import Zustand03 from "./Zustand/Zustand03";
 import Zustand04 from "./Zustand/Zustand04";
+import Axios01 from "./Axios/Axios01";
+import Axios02 from "./Axios/Axios02";
 
 export default function study() {
     const stateStudy = {
@@ -27,7 +30,9 @@ export default function study() {
         11: <Zustand02 />,
         12: <Zustand03 />,
         13: <Zustand04 />,
+        14: <Axios01 />,
+        15: <Axios02 />,
     }
 
-  return stateStudy[13];
+  return stateStudy[15];
 }
