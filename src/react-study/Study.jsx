@@ -15,6 +15,7 @@ import Zustand04 from "./Zustand/Zustand04";
 import Axios01 from "./Axios/Axios01";
 import Axios02 from "./Axios/Axios02";
 import Axios03 from "./Axios/Axios03";
+import UserRouter from "./Axios/UserPostList/UserRouter";
 
 export default function study() {
     const stateStudy = {
@@ -34,7 +35,8 @@ export default function study() {
         14: <Axios01 />,
         15: <Axios02 />,
         16: <Axios03 />,
+        17: <UserRouter />,
     }
 
-  return stateStudy[16];
+  return stateStudy[17];
 }
