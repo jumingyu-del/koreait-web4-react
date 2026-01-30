@@ -16,27 +16,14 @@ import Axios01 from "./Axios/Axios01";
 import Axios02 from "./Axios/Axios02";
 import Axios03 from "./Axios/Axios03";
 import UserRouter from "./Axios/UserPostList/UserRouter";
+import Axios04 from "./Axios/Axios04";
+import Axios05 from "./Axios/Axios05";
+import Axios06 from "./Axios/Axios06";
 
 export default function study() {
     const stateStudy = {
-        1: <UseRef01 />,
-        2: <UseRef02 />,
-        3: <Emotion01 />,
-        4: <Emotion02 />,
-        5: <Router01 />,
-        6: <Router02 />,
-        7: <Router03 />,
-        8: <Router04 />,
-        9: <Router05 />,
-        10: <Zustand01 />,
-        11: <Zustand02 />,
-        12: <Zustand03 />,
-        13: <Zustand04 />,
-        14: <Axios01 />,
-        15: <Axios02 />,
-        16: <Axios03 />,
-        17: <UserRouter />,
+        1: <Axios06 />,
     }
 
-  return stateStudy[17];
+  return stateStudy[1];
 }

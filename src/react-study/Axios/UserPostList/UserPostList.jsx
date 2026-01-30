@@ -24,7 +24,7 @@ export default function UserPostList() {
   return (
     <div>
         <table>
-            <thead>
+            <thead> 
                 <tr>
                     <th>번호</th>
                     <th>제목</th>
