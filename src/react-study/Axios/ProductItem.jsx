@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { deleteProductApi } from './apis/productApi';
+import { deleteProductApi, updateProductApi } from './apis/productApi';
 import { useToastStore } from '../Zustand/store/toastStore';
 
 // 상품 하나당 ProductItem 컴포넌트 한 개
@@ -53,6 +53,24 @@ export default function ProductItem({product, doRefetch}) {
   const handleUpdate = async () => {
     const agree = confirm("업데이트 하시겠습니까?")
     if(!agree) return;
+    try {
+      // js객체 -> JSON -> dto 객체
+      await updateProductApi(product.id, editVal);
+      setIsEditing(false); // 조건부렌더링 교체
+      showToast("수정 완료");
+      doRefetch();
+
+    } catch(error) {
+      // 왜 성공응답 body는 response.data에 있고
+      // 실패응답은 body는 error.response.data에 있지?
+      // js는 서버가 에러 응답이건 성공응답이건
+      // 성공으로 간주 -> axios가 알아서 에러응답을 예외로 던져줌
+      if(error.response) {
+
+      } else { // 서버가 아닌 기타 에러
+        // 서버와 연결할 수 없음
+      }
+    }
   }
 
   return (

@@ -19,11 +19,13 @@ import UserRouter from "./Axios/UserPostList/UserRouter";
 import Axios04 from "./Axios/Axios04";
 import Axios05 from "./Axios/Axios05";
 import Axios06 from "./Axios/Axios06";
+import ReactQuery01 from "./ReactQuery/ReactQuery01";
 
 export default function study() {
     const stateStudy = {
         1: <Axios06 />,
+        2: <ReactQuery01 />,
     }
 
-  return stateStudy[1];
+  return stateStudy[2];
 }
