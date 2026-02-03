@@ -3,6 +3,7 @@ import ReactQuery01 from "./ReactQuery/ReactQuery01";
 import ReactQuery02 from "./ReactQuery/ReactQuery02";
 import ReactQuery03 from "./ReactQuery/ReactQuery03";
 import ReactQuery04 from "./ReactQuery/ReactQuery04";
+import ReactQuery05 from "./ReactQuery/ReactQuery05";
 
 export default function study() {
     const stateStudy = {
@@ -11,7 +12,8 @@ export default function study() {
         3: <ReactQuery02 />,
         4: <ReactQuery03 />,
         5: <ReactQuery04 />,
+        6: <ReactQuery05 />,
     }
 
-  return stateStudy[5];
+  return stateStudy[6];
 }
