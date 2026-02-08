@@ -1,3 +1,5 @@
+import Home from "../pages/Home/Home"
+
 // 상단 header navbar 일반 메뉴들
 export const MENU_ITEMS = [
     {
@@ -26,7 +28,7 @@ export const PUBLIC_ROUTES = [
     {
         id: "home",
         path: "/",
-        element: <>홈화면</>
+        element: <Home />
     },
     {
         id: "signin",
@@ -47,5 +49,6 @@ export const PROTECTED_ROUTES = [
         id: "mypage",
         path: "/mypage",
         element: <>마이페이지</>
-    }
+    },
+    
 ]
