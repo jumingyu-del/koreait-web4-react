@@ -28,6 +28,18 @@ export const useAuthStore = create((set) => {
                 isAuthenticated: false,
                 accessToken: null
             })
+        },
+
+        // 토큰 업데이트 - 인터셉터용
+        setToken: (newAccessToken) => {
+            // 새로 받아온 토큰이 있다면
+            if(newAccessToken) {
+                localStorage.setItem("accessToken", newAccessToken);
+            } else { // 없다면
+                console.log("리프레쉬 실패");
+                localStorage.removeItem("accessToken");
+            }   
+            set({accessToken: newAccessToken, isAuthenticated: !!accessToken});
         }
     }
 });
